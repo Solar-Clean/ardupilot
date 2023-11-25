@@ -287,7 +287,7 @@ fi
 heading "Adding ArduPilot Tools to environment"
 
 SCRIPT_DIR=$(dirname $(sudo realpath $0))
-ARDUPILOT_ROOT=$(realpath "$SCRIPT_DIR/../../")
+ARDUPILOT_ROOT=$(sudo realpath "$SCRIPT_DIR/../../")
 
 if [[ $DO_AP_STM_ENV -eq 1 ]]; then
 exportline="export PATH=$OPT/$ARM_ROOT/bin:\$PATH";
